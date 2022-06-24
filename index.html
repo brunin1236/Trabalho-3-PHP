@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+      body{font-family: Arial, Helvetica, sans-serif;
+      
+      }
+      .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: silver;
+        border-radius: 15px;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+      <form class= "form" method="post" action="./email.php">
+      <fieldset>
+        <legend>Formulario</legend>
+    <div class="inputbox">
+    <input type="text" name="nome" id="nome" class="inputuser" required>
+    <label for="nome">Nome</label>
+    </div>
+    <br><br>
+    <div class="inputbox">
+        <input type="email" name="email" id="email" class="inputuser" required>
+        <label for="email">Email</label>
+        </div>
+        <br><br>
+        <div class="inputbox">
+            <input type="date" name="idade" id="idade" class="inputuser" required>
+            <label for="idade">Data Nascimento</label>
+            <br><br>
+         <div class="inputbox">
+         <input type="quantidade" name="quantidade" id="quantidade" class="inputuser" required>
+         <label for="quantidade">Produtos</label>
+    </div>
+    <br><br>
+    <input type="submit" name="submit" id="submit">
+      </fieldset>
+      </form>
+    </div>
+
+</body>
+</html>
